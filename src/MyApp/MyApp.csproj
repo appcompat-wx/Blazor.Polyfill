@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+  <PropertyGroup><TargetFramework>net11.0</TargetFramework>
+
     <DefaultItemExcludes>${DefaultItemExcludes};node_modules\**</DefaultItemExcludes>
   </PropertyGroup>
 
@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\es5cache\" />
-    <Folder Include="wwwroot\es5cache\_framework\" />
   </ItemGroup>
 
   <ItemGroup>

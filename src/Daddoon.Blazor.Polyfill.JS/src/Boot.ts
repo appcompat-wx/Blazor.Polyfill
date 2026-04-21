@@ -1,10 +1,8 @@
-﻿/* BLAZOR.POLYFILL Version 7.0.203 */
+﻿/* BLAZOR.POLYFILL Version 6.0.100.2 */
 
 //Polyfill for Object.assign on IE (used for SyncFusion)
 import '../src/assign.polyfill.js';
 
-//Polyfill for Blob and missing ArrayBuffer method
-import 'blob-polyfill';
 import 'core-js/stable';
 import "regenerator-runtime/runtime";
 import 'web-animations-js';

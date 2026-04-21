@@ -5,7 +5,7 @@ Blazor server-side Polyfills and fixes for **Internet Explorer 11** & **Edge Leg
 # SUMMARY
 
 - [Installation](#installation)
-  - [.NET 5.0 / .NET 6.0 / .NET 7.0](#net-50--net-60--net-70)
+  - [.NET 5.0 / .NET 6.0](#net-50--net-60)
     - [Installation](#installation)
     - [(Optional) Javascript isolation & module import support](#optional-javascript-isolation--module-import-support)
     - [Additional options](#additional-options)
@@ -19,7 +19,7 @@ Blazor server-side Polyfills and fixes for **Internet Explorer 11** & **Edge Leg
 
 # INSTALLATION
 
-## .NET 5.0 / .NET 6.0 / .NET 7.0
+## .NET 5.0 / .NET 6.0
 
 ### Installation
 
@@ -29,10 +29,10 @@ Blazor server-side Polyfills and fixes for **Internet Explorer 11** & **Edge Leg
 
 
 - Install the **BlazorPolyfill.Server** package interactively from the NuGet Package manager in Visual Studio.
-  - If installing for **.NET 6.x** and **.NET 7.x**, please install the **7.0.203.1**.
+  - If installing for **.NET 6.x**, please install the **6.0.100** version.
   - If installing for **.NET 5.x**, please install the **5.0.102** version.
 - **Or** install it from the Package Manager CLI with this command:
-  - For **.NET 6.x** and **.NET 7.x**
+  - For **.NET 6.x**
     ```
     Install-Package BlazorPolyfill.Server
     ```
@@ -218,20 +218,6 @@ public bool ForceES5Fallback { get; set; }
 // Also, Internet Explorer 11 and Edge Legacy will always return the ES5 Fallback behavior in all scenarios.
 public Func<HttpRequest, bool> ES5FallbackValidation { get; set; }
 
-// Provide a method that expose a Javascript file that must be converted to ES5, in case you
-// wish to alter it before transformation.
-// First parameter is the file path from request,
-// Second parameter is the original file content,
-// Return value is the content that will be provided for the ES5 transformer
-public Func<string, string, string> BeforeES5TransformHandler { get; set; }
-
-// Allow to bind a custom method that will be called when an internal ES5 conversion
-// event fail in order to track down the cause.
-// First parameter is the source file path
-// Second parameter is the Blazor.Polyfill.Server exception when the exception occur
-// with the innerException that thrown.
-public Action<string, Exception> OnES5ConvertFailure { get; set; }
-
 // If enabled, the polyfill library will assume that you have added the BlazorPolyfill.Build library to your project
 // and will try to load the generated ES5 scripts version of your javascript modules at boot after the polyfill library
 // initialization on client side.
@@ -387,9 +373,9 @@ Some events are done before the final file result is cached on the server:
 
 **Telerik Blazor Component** or **MatBlazor** may not work out of the box on IE11.
 
-This is not related to a missing functionality of Blazor.Polyfill, as it is sufficient to launch Blazor on IE11 with it, but just the fact that some functionalities used by Telerik Blazor component are not available on it.
+This is not related to a missing functionnality of Blazor.Polyfill, as it is sufficient to launch Blazor on IE11 with it, but just the fact that some functionnalities used by Telerik Blazor component are not available on it.
 
-Some additional polyfills will be required in addition of Blazor.Polyfill, to make the **Telerik Blazor Component** library work on it.
+Some additionnal polyfills will be required in addition of Blazor.Polyfill, to make the **Telerik Blazor Component** library work on it.
 
 You will need:
 
