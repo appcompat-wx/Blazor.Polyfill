@@ -1,0 +1,43 @@
+@page "/counter"
+
+@inject IJSRuntime JSRuntime
+@implements IAsyncDisposable
+Enter your name:
+<input @bind="name" />
+<button @onclick="Submit">Submit</button>
+
+ <RadzenSlider @bind-Value=@value TValue="int" Min="0" Max="100" Change=@(args => OnChange(args, "Slider from 0 to 100")) />
+
+@code {
+    private string name;
+
+    // Load the module and keep a reference to it
+    // You need to use .AsTask() to convert the ValueTask to Task as it may be awaited multiple times
+    private Task<IJSObjectReference> _module;
+    private Task<IJSObjectReference> Module => _module ??= JSRuntime.InvokeAsync<IJSObjectReference>("_import_", "/js/modules/page.js").AsTask();
+
+    async Task Submit()
+    {
+        var module = await Module;
+        await module.InvokeVoidAsync("sayHi", name);
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (_module != null)
+        {
+            var module = await _module;
+            await module.DisposeAsync();
+        }
+    }
+
+    IEnumerable<int> values = new int[] { 14, 78 };
+    IEnumerable<int> negativeValues = new int[] { -100, 100 };
+    int value = 67;
+    int negativeValue = 0;
+    int valueWithStep = 30;
+
+    void OnChange(dynamic value, string name)
+    {
+    }
+}
