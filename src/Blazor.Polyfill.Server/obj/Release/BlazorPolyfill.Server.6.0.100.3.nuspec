@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BlazorPolyfill.Server</id>
+    <version>6.0.100.3</version>
+    <authors>Guillaume ZAHRA</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>logo_blazorpolyfill_128.png</icon>
+    <projectUrl>https://github.com/Daddoon/Blazor.Polyfill</projectUrl>
+    <description>Support of Blazor server-side for Internet Explorer 11, Edge Legacy and more on .NET 6.0.100</description>
+    <releaseNotes>6.0.100.3:
+- Fix invalid 'require' keyword in blazor.server.js added by Babel in transpilation that cannot be used on a pure javascript environment
+
+6.0.100.2:
+- Blazor.Polyfill now respect the autostart attribute value at start
+- Added the ES5ConversionScope option in Blazor.Polyfill configuration. This option is meant to transpile None, Razor Class Libraries, or All Javascript files to ES5 automatically and store it in a es5cache store for your application. Files will be used automatically at runtime when needed. Keeping them under source control is advised.
+
+6.0.100.1:
+- Added 'webRootPath' parameter on _import_ javascript isolation emulation method. See the documentation for usage.
+
+6.0.100.0:
+- Support for .NET 6.0.100
+
+5.0.102.0:
+- Added option to disable automatic React.NET registration, to give more control to advanced scenarios.
+- Updated V8 and Native V8 dependencies to 7.1.0
+- Added V8 native dependencies for ARM64 (Linux) and ARM64 (Windows)
+- Added some conditional logics about the default JS engine used. Windows and OSX (all CPU type) and Linux (x64) uses ChakraCore. Linux (ARM64) use V8. Other platforms or failing scenarios should use the "UsePackagedBlazorServerLibrary" option instead.
+
+5.0.100.6:
+- Add configurable ES5 fallback option with a delegate validation
+- Add Javascript isolation and dynamic import emulation - See the documentation
+
+5.0.100.5:
+- Fix dependencies error on Linux (Debian 10 default installation)
+- Potentially fix Azure Web App error with the default Linux image container
+- Added BlazorPolyfillOptions parameter for UseBlazorPolyfill methods in order to configure additional behaviors at startup
+- Added the ForceES5Fallback option in order to force ES5 and Polyfill behaviors even if the browser is not Internet Explorer 11 or Edge Legacy.
+- Added ChakraCore engine image and set it as default. V8 engine is still present as fallback engine.</releaseNotes>
+    <tags>blazor blazor-server ie11 edgeHTML edge-legacy polyfill</tags>
+    <repository type="Git" url="https://github.com/Daddoon/Blazor.Polyfill" />
+    <dependencies>
+      <group targetFramework="net11.0">
+        <dependency id="JavaScriptEngineSwitcher.ChakraCore" version="3.9.1" exclude="Build,Analyzers" />
+        <dependency id="JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64" version="3.9.1" exclude="Build,Analyzers" />
+        <dependency id="JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64" version="3.9.1" exclude="Build,Analyzers" />
+        <dependency id="JavaScriptEngineSwitcher.ChakraCore.Native.win-arm" version="3.9.1" exclude="Build,Analyzers" />
+        <dependency id="JavaScriptEngineSwitcher.ChakraCore.Native.win-arm64" version="3.9.1" exclude="Build,Analyzers" />
+        <dependency id="JavaScriptEngineSwitcher.ChakraCore.Native.win-x64" version="3.9.1" exclude="Build,Analyzers" />
+        <dependency id="JavaScriptEngineSwitcher.ChakraCore.Native.win-x86" version="3.9.1" exclude="Build,Analyzers" />
+        <dependency id="JavaScriptEngineSwitcher.Extensions.MsDependencyInjection" version="3.3.0" exclude="Build,Analyzers" />
+        <dependency id="JavaScriptEngineSwitcher.V8" version="3.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ClearScript.V8.Native.linux-arm64" version="7.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ClearScript.V8.Native.linux-x64" version="7.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ClearScript.V8.Native.osx-x64" version="7.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ClearScript.V8.Native.win-arm64" version="7.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ClearScript.V8.Native.win-x64" version="7.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ClearScript.V8.Native.win-x86" version="7.1.0" exclude="Build,Analyzers" />
+        <dependency id="NUglify" version="1.13.2" exclude="Build,Analyzers" />
+        <dependency id="React.AspNet" version="5.2.11" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net11.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\bin\Release\net11.0\Blazor.Polyfill.Server.dll" target="lib\net11.0\Blazor.Polyfill.Server.dll" />
+    <file src="C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\bin\Release\net11.0\Blazor.Polyfill.Server.xml" target="lib\net11.0\Blazor.Polyfill.Server.xml" />
+    <file src="C:\AppBuild\Blazor.Polyfill\logo_blazorpolyfill_128.png" target="logo_blazorpolyfill_128.png" />
+  </files>
+</package>

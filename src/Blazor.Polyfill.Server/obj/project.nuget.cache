@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZQhi4GVlnH0=",
+  "success": true,
+  "projectFilePath": "C:\\AppBuild\\Blazor.Polyfill\\src\\Blazor.Polyfill.Server\\Blazor.Polyfill.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\appcompat\\.nuget\\packages\\advancedstringbuilder\\0.1.0\\advancedstringbuilder.0.1.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\javascriptengineswitcher.chakracore\\3.9.1\\javascriptengineswitcher.chakracore.3.9.1.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\javascriptengineswitcher.chakracore.native.linux-x64\\3.9.1\\javascriptengineswitcher.chakracore.native.linux-x64.3.9.1.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\javascriptengineswitcher.chakracore.native.osx-x64\\3.9.1\\javascriptengineswitcher.chakracore.native.osx-x64.3.9.1.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\javascriptengineswitcher.chakracore.native.win-arm\\3.9.1\\javascriptengineswitcher.chakracore.native.win-arm.3.9.1.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\javascriptengineswitcher.chakracore.native.win-arm64\\3.9.1\\javascriptengineswitcher.chakracore.native.win-arm64.3.9.1.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\javascriptengineswitcher.chakracore.native.win-x64\\3.9.1\\javascriptengineswitcher.chakracore.native.win-x64.3.9.1.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\javascriptengineswitcher.chakracore.native.win-x86\\3.9.1\\javascriptengineswitcher.chakracore.native.win-x86.3.9.1.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\javascriptengineswitcher.core\\3.3.0\\javascriptengineswitcher.core.3.3.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\javascriptengineswitcher.extensions.msdependencyinjection\\3.3.0\\javascriptengineswitcher.extensions.msdependencyinjection.3.3.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\javascriptengineswitcher.v8\\3.10.0\\javascriptengineswitcher.v8.3.10.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\jspool\\4.0.0\\jspool.4.0.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.aspnetcore.staticfiles\\2.2.0\\microsoft.aspnetcore.staticfiles.2.2.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.clearscript.core\\7.1.0\\microsoft.clearscript.core.7.1.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.clearscript.v8\\7.1.0\\microsoft.clearscript.v8.7.1.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.clearscript.v8.native.linux-arm64\\7.1.0\\microsoft.clearscript.v8.native.linux-arm64.7.1.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.clearscript.v8.native.linux-x64\\7.1.0\\microsoft.clearscript.v8.native.linux-x64.7.1.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.clearscript.v8.native.osx-x64\\7.1.0\\microsoft.clearscript.v8.native.osx-x64.7.1.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.clearscript.v8.native.win-arm64\\7.1.0\\microsoft.clearscript.v8.native.win-arm64.7.1.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.clearscript.v8.native.win-x64\\7.1.0\\microsoft.clearscript.v8.native.win-x64.7.1.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.clearscript.v8.native.win-x86\\7.1.0\\microsoft.clearscript.v8.native.win-x86.7.1.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.1.0\\microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\microsoft.extensions.dependencymodel\\2.1.0\\microsoft.extensions.dependencymodel.2.1.0.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\nuglify\\1.13.2\\nuglify.1.13.2.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\react.aspnet\\5.2.11\\react.aspnet.5.2.11.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\react.aspnet.middleware\\5.2.11\\react.aspnet.middleware.5.2.11.nupkg.sha512",
+    "C:\\Users\\appcompat\\.nuget\\packages\\react.core\\5.2.11\\react.core.5.2.11.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.AspNetCore.Http.Abstractions will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "C:\\AppBuild\\Blazor.Polyfill\\src\\Blazor.Polyfill.Server\\Blazor.Polyfill.Server.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\AppBuild\\Blazor.Polyfill\\src\\Blazor.Polyfill.Server\\Blazor.Polyfill.Server.csproj",
+      "libraryId": "Microsoft.AspNetCore.Http.Abstractions",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    },
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.AspNetCore.StaticFiles will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "C:\\AppBuild\\Blazor.Polyfill\\src\\Blazor.Polyfill.Server\\Blazor.Polyfill.Server.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\AppBuild\\Blazor.Polyfill\\src\\Blazor.Polyfill.Server\\Blazor.Polyfill.Server.csproj",
+      "libraryId": "Microsoft.AspNetCore.StaticFiles",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Newtonsoft.Json' 12.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
+      "projectPath": "C:\\AppBuild\\Blazor.Polyfill\\src\\Blazor.Polyfill.Server\\Blazor.Polyfill.Server.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\AppBuild\\Blazor.Polyfill\\src\\Blazor.Polyfill.Server\\Blazor.Polyfill.Server.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    }
+  ]
+}

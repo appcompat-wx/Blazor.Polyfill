@@ -1,0 +1,13 @@
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\bin\Release\net11.0\Blazor.Polyfill.Server.deps.json
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\bin\Release\net11.0\Blazor.Polyfill.Server.dll
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\bin\Release\net11.0\Blazor.Polyfill.Server.pdb
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\bin\Release\net11.0\Blazor.Polyfill.Server.xml
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\obj\Release\net11.0\Blazor.Polyfill.Server.csproj.AssemblyReference.cache
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\obj\Release\net11.0\Blazor.Polyfill.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\obj\Release\net11.0\Blazor.Polyfill.Server.AssemblyInfoInputs.cache
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\obj\Release\net11.0\Blazor.Polyfill.Server.AssemblyInfo.cs
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\obj\Release\net11.0\Blazor.Polyfill.Server.csproj.CoreCompileInputs.cache
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\obj\Release\net11.0\Blazor.Polyfill.Server.dll
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\obj\Release\net11.0\refint\Blazor.Polyfill.Server.dll
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\obj\Release\net11.0\Blazor.Polyfill.Server.pdb
+C:\AppBuild\Blazor.Polyfill\src\Blazor.Polyfill.Server\obj\Release\net11.0\ref\Blazor.Polyfill.Server.dll
